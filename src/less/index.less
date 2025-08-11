@@ -1,0 +1,255 @@
+
+main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+//Menu
+
+.menu {
+
+  display: flex;
+  flex-direction: column;
+  background-color: #3C4C66;
+  width: 262px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+
+    &_active {
+      background-color: #2D394D;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  &__icon {
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  &__txt {
+    font-size: 18px;
+
+
+
+  }
+}
+
+//Блок "Друзья"
+
+.friends {
+  background-color: #3C4C66;
+  width: 262.67px;
+  height: 130px;
+  margin-right: 10px;
+  display: flex;
+
+
+
+  &__photos {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-left: 6px;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+//Main photo
+
+.photo {
+height: fit-content;
+  background-color: #3C4C66;
+  padding: 8px;
+  margin-top: 10px;
+
+
+  &__img {
+    width: 100%;
+
+  }
+}
+
+//Profile
+
+.profile {
+
+  background-color: #3C4C66;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+
+  &__name {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-weight: normal;
+  }
+
+  &__info {
+    margin-top: 0;
+    margin-bottom: 2px;
+
+    &_gray {
+      color: #b1b7c2;
+    }
+  }
+}
+
+//Заголовок поста
+
+.post-title {
+  background-color: #3C4C66;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.profile-wrap {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+//First post
+
+.post {
+  background-color: #3C4C66;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &__photo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-right: 15px;
+
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__name {
+    color: white;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__date {
+    font-size: 12px;
+    display: block;
+  }
+
+  &__txt {
+    font-size: 18px;
+  }
+
+  &__wrap_flex {
+    display: flex;
+  }
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+&__icon {
+  width: 30px;
+}
+
+  &__count {
+    font-size: 34px;
+    color: black;
+    margin-right: 15px;
+  }
+}
+
+//Форма для ввода сообщений
+
+.form {
+  background-color: #3C4C66;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  &__message {
+    display: flex;
+    align-items: center;
+    background-color: #2D394D;
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Coming Soon;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+
+  }
+
+  &__btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #96BFFF;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    display: block;
+    margin-left: auto;
+    border: none;
+    font-family: Coming Soon;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #C54D59;
+    }
+  }
+}
+
+
