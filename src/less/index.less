@@ -267,6 +267,82 @@ height: fit-content;
     &:hover {
       background-color: #C54D59;
     }
+
+    &_follow {
+      margin-left: 0;
+      border-radius: 10px;
+      font-size: 20px;
+      width: 110px;
+    }
+
+    &_active {
+      background-color: #C54D59;
+
+      &:hover {
+        background-color: #96BFFF;
+      }
+    }
+  }
+}
+
+//Friends-list
+
+.friends-list {
+
+  background-color: #3C4C66;
+  width: 100%;
+  padding: 15px;
+}
+
+.friend {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2D394D;
+align-items: center;
+  color: white;
+  height: 110px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+
+  &__page {
+    text-decoration: none;
+   display: flex;
+    align-items: center;
+    width: 20%;
+  }
+
+  &__country {
+    display: block;
+    font-size: 20px;
+
+    &_city {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  &__photos {
+    width: 90px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+
+  &__name {
+    font-size: 20px;
+    color: white;
+
+
+  }
+
+  &__status {
+    width: 50%;
   }
 }
 
@@ -277,7 +353,7 @@ height: fit-content;
 .dialogues {
   background-color: #3C4C66;
   display: grid ;
-  justify-content: column;
+  justify-content:column;
 
   &__friends {
     display: flex;
@@ -286,7 +362,6 @@ height: fit-content;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-
 
   }
 }
