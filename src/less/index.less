@@ -246,6 +246,11 @@ height: fit-content;
       font-size: 16px;
     }
 
+    &_dialog {
+      height: auto;
+      width: 80%;
+    }
+
   }
 
   &__btn {
@@ -301,7 +306,6 @@ height: fit-content;
 align-items: center;
   color: white;
   height: 110px;
-
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 15px;
@@ -352,18 +356,136 @@ align-items: center;
 
 .dialogues {
   background-color: #3C4C66;
-  display: grid ;
-  justify-content:column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
 
-  &__friends {
-    display: flex;
-    justify-content: center;
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+.dialog {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(114, 225, 244, 0.63);
+  }
+
+  &__photos {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  &__name {
     padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    color: white;
+
+
+  }
+
+  &_active {
+    background-color: #2D394D;
+
+  }
+
+  &__online {
+    width: 10px;
+    height: 10px;
+    background-color: #2D394D;
+    border-radius: 50%;
+    margin-left: 35px;
+
+  }
+
+}
+
+.messages {
+  background-color: #3C4C66;
+  margin-left: 10px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.message {
+
+  &__photo {
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 930px;
+
+
+    &_left {
+    margin-left: 0;
+    }
+  }
+
+  &__date {
+    text-align: center;
+  }
+
+  &__txt {
+    background-color: #2D394D;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
 
+    &:after {
+      background-image: url("/img/triangle.png");
+      display: block;
+      width: 30px;
+      height: 20px;
+      content: '';
+      position: relative;
+      top: 39px;
+      left: 93%;
+    }
+
+    &_inner {
+      margin-left: auto;
+      margin-right: 8%;
+
+      &:after {
+        background-image: url("/img/triangel_inner.png");
+        width: 37px;
+        height: 25px;
+        left: 4%;
+      }
+    }
+
   }
 }
+
+.form {
+  display: block;
+
+  &__icon {
+    width: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
