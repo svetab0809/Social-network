@@ -223,8 +223,6 @@ height: fit-content;
 
 
   &__message {
-    display: flex;
-    align-items: center;
     background-color: #2D394D;
     margin-top: 10px;
     padding-right: 15px;
@@ -247,9 +245,11 @@ height: fit-content;
     }
 
     &_dialog {
-      height: auto;
-      width: 75%;
+       height: 30px;
+      width: 79%;
       font-size: 15px;
+      border-radius: 10px;
+
     }
 
   }
@@ -288,6 +288,19 @@ height: fit-content;
         background-color: #96BFFF;
       }
     }
+  }
+
+  &__icon {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  &_dialog {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -359,7 +372,7 @@ align-items: center;
   background-color: #3C4C66;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 260px;
+  min-width: 260px;
   margin-left: 0;
 
   &__title {
@@ -415,11 +428,11 @@ align-items: center;
 .messages {
   background-color: #3C4C66;
   margin-left: 7px;
-  width: 54%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 30px;
-  padding-left: 30px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .message {
@@ -427,7 +440,7 @@ align-items: center;
   &__photo {
     width: 55px;
     border-radius: 50%;
-    margin-left: 600px;
+    margin-left: 91%;
 
 
     &_left {
@@ -441,12 +454,13 @@ align-items: center;
 
   &__txt {
     background-color: #2D394D;
-    width: 83%;
+    width: 88%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 15px;
+    border-radius: 10px;
 
     &:after {
       background-image: url("/img/triangle.png");
@@ -456,31 +470,24 @@ align-items: center;
       content: '';
       position: relative;
       top: 25px;
-      left: 93%;
+      left: 94%;
     }
 
     &_inner {
       margin-left: auto;
-      margin-right: 3%;
+      margin-right: 5%;
 
       &:after {
         background-image: url("/img/triangel_inner.png");
         width: 37px;
         height: 25px;
-        left: 4%;
+        left: 3%;
       }
     }
 
   }
 }
 
-.form {
-
-
-  &__icon {
-    width: 30px;
-  }
-}
 
 
 
